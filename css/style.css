@@ -278,6 +278,19 @@ img { max-width: 100%; display: block; }
     50% { transform: translateX(-50%) scale(1.2); opacity: 1; }
 }
 
+.hero-logo-watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    color: var(--pink);
+    opacity: 0.06;
+    z-index: 0;
+    pointer-events: none;
+}
+
 .hero-content {
     position: relative;
     z-index: 1;
@@ -1027,6 +1040,11 @@ img { max-width: 100%; display: block; }
 
     .hamburger.active span:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .hero-logo-watermark {
+        width: 300px;
+        height: 300px;
     }
 
     .hero-title {
