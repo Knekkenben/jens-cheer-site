@@ -92,6 +92,7 @@ Vanilla JavaScript (no frameworks). Handles:
    - Headline: "BUILT BY DISCIPLINE. DRIVEN BY HEART. DEFINED BY SPORT." (3-line slogan)
    - Subtitle text
    - Two CTAs: "SHOP NOW" (filled) + "VIEW COLLECTIONS" (outline)
+   - **Pyramid logo watermark** — large semi-transparent SVG behind the headline (`.hero-logo-watermark`), pink at 12% opacity, 500px desktop / 300px mobile
    - Animated pink radial gradient background with pulse effect
    - Scroll indicator at bottom
 4. **Marquee** — Pink scrolling banner with brand slogans ("CHEER IS A SPORT", "COMPETITION READY", "BOLD & FIERCE", etc.)
@@ -147,6 +148,7 @@ The hero headline uses a 3-line slogan and has been carefully sized:
 - Collection cards: image scales up on hover
 
 ## Notes
+- **Pyramid logo** — inline SVG used as a watermark in the hero section; this is the brand's logo motif (stacked horizontal trapezoids forming a pyramid shape)
 - No actual product images yet — using CSS gradient backgrounds with faint SVG icons as placeholders
 - The `images/` directory exists but is empty — reserved for logos (owner said they will provide logos)
 - No backend — newsletter form and cart are frontend-only (visual demos)
