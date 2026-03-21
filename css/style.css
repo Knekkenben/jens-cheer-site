@@ -144,6 +144,9 @@ img { max-width: 100%; display: block; }
     height: 28px;
     color: var(--pink);
     flex-shrink: 0;
+    align-self: center;
+    position: relative;
+    top: 2px;
 }
 
 .logo-cheer-is {
