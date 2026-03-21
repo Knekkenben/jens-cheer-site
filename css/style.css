@@ -132,7 +132,7 @@ img { max-width: 100%; display: block; }
 
 .logo {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 6px;
     font-family: var(--font-display);
     font-size: 1.8rem;
@@ -144,9 +144,6 @@ img { max-width: 100%; display: block; }
     height: 28px;
     color: var(--pink);
     flex-shrink: 0;
-    align-self: center;
-    position: relative;
-    top: 4px;
 }
 
 .logo-cheer-is {
