@@ -1003,8 +1003,9 @@ img { max-width: 100%; display: block; }
 
 @media (max-width: 768px) {
     .announcement-bar {
-        font-size: 0.65rem;
+        font-size: 0.5rem;
         padding: 8px 12px;
+        letter-spacing: 0.08em;
     }
 
     .navbar {
