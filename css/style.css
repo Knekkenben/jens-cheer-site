@@ -139,6 +139,13 @@ img { max-width: 100%; display: block; }
     letter-spacing: 0.05em;
 }
 
+.logo-pyramid {
+    width: 28px;
+    height: 28px;
+    color: var(--pink);
+    flex-shrink: 0;
+}
+
 .logo-cheer-is {
     color: var(--white);
 }
