@@ -24,11 +24,13 @@ Inspired by [procheerleague.com](https://procheerleague.com/) — bold, modern, 
 ```
 jens-cheer-site/
 ├── index.html          # Single-page homepage (all sections)
+├── favicon.svg         # Pyramid logo favicon (pink SVG)
+├── CLAUDE.md           # Project guide and context for AI assistants
 ├── css/
 │   └── style.css       # All styles — layout, components, responsive breakpoints
 ├── js/
 │   └── main.js         # Interactions — mobile menu, scroll animations, cart, newsletter
-└── images/             # (empty) Reserved for future logos/product images
+└── images/             # (empty) Reserved for future product images
 ```
 
 ## Files
@@ -52,9 +54,11 @@ Vanilla JavaScript (no frameworks). Handles:
 ## Design System
 
 ### Brand Name
-**Cheer Is A Sport** — displayed as two-tone text logo:
+**Cheer Is A Sport** — displayed as pyramid icon + two-tone text logo:
+- Pyramid SVG icon in pink (`.logo-pyramid`) — 28px, appears in both navbar and footer
 - "CHEER IS" in white (`.logo-cheer-is`)
 - "A SPORT" in pink (`.logo-a-sport`)
+- Logo uses `align-items: center` for flex alignment
 
 ### Color Palette (CSS Variables)
 | Variable        | Value      | Usage                        |
@@ -92,7 +96,7 @@ Vanilla JavaScript (no frameworks). Handles:
    - Headline: "BUILT BY DISCIPLINE. DRIVEN BY HEART. DEFINED BY SPORT." (3-line slogan)
    - Subtitle text
    - Two CTAs: "SHOP NOW" (filled) + "VIEW COLLECTIONS" (outline)
-   - **Pyramid logo watermark** — large semi-transparent SVG behind the headline (`.hero-logo-watermark`), pink at 12% opacity, 500px desktop / 300px mobile
+   - **Pyramid logo watermark** — large semi-transparent SVG behind the headline (`.hero-logo-watermark`), pink at 12% opacity, 500px desktop / 300px mobile, positioned at `top: 45%` desktop / `top: 40%` mobile to center on headline text
    - Animated pink radial gradient background with pulse effect
    - Scroll indicator at bottom
 4. **Marquee** — Pink scrolling banner with brand slogans ("CHEER IS A SPORT", "COMPETITION READY", "BOLD & FIERCE", etc.)
@@ -120,7 +124,7 @@ Vanilla JavaScript (no frameworks). Handles:
 ## Responsive Breakpoints
 
 - **1024px:** Product grid → 2 columns, footer → 2 columns
-- **768px:** Mobile nav (hamburger menu), single-column collections, 2-column products, single-column about/testimonials/footer, stacked newsletter form
+- **768px:** Mobile nav (hamburger menu), single-column collections, 2-column products, single-column about/testimonials/footer, stacked newsletter form, announcement bar text shrunk to `0.5rem`, hero watermark shrunk to 300px
 - **480px:** Single-column products, stacked hero CTAs
 
 ## Product Badge Colors
@@ -148,9 +152,9 @@ The hero headline uses a 3-line slogan and has been carefully sized:
 - Collection cards: image scales up on hover
 
 ## Notes
-- **Pyramid logo** — inline SVG used as a watermark in the hero section; this is the brand's logo motif (stacked horizontal trapezoids forming a pyramid shape)
+- **Pyramid logo** — inline SVG (stacked horizontal trapezoids forming a pyramid shape). Used in 3 places: navbar logo, footer logo, and hero watermark. Also used as the favicon (`favicon.svg`).
 - No actual product images yet — using CSS gradient backgrounds with faint SVG icons as placeholders
-- The `images/` directory exists but is empty — reserved for logos (owner said they will provide logos)
+- The `images/` directory exists but is empty — reserved for future product images
 - No backend — newsletter form and cart are frontend-only (visual demos)
 - No frameworks or build tools — plain HTML/CSS/JS
 - All icons are inline SVGs (no icon library dependency)
